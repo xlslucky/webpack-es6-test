@@ -1,3 +1,13 @@
+## 启动项目
+
+```shell
+  # 编译
+  npm run dev
+
+  # 启动项目
+  npm start
+```
+
 ## 参考资料
 
 ### react-router
