@@ -5,7 +5,7 @@ module.exports = {
   entry: './app',
   output: {
     path: __dirname + '/dist/',
-    filename: 'build.js'
+    filename: '[name].js'
   },
   module: {
     /*loaders: [
@@ -29,6 +29,7 @@ module.exports = {
         compress: {
           warnings: false
         }
-      })
+      }),
+      new webpack.optimize.CommonsChunkPlugin('common')
     ]
 }
