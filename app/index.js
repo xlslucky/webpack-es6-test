@@ -17,9 +17,12 @@ class Children extends Component {
 }
 
 ReactDOM.render(
-  <Router history={browserHistory} >
+  // <Router history={browserHistory} >
+  <Router>
     <Route path="/" component={Home} />
     <Route path="/children" component={Children} />
   </Router>, 
   app
 );
+
+// ReactDOM.render(<Home />, app)
