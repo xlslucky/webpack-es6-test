@@ -2,19 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, hashHistory } from 'react-router';
 
-import { Home } from './pages/Home'
+import { Home } from './pages/Home';
+import { Children } from './pages/Children';
 
 let app = document.getElementById('app');
-
-class Children extends Component {
-  render() {
-    return (
-      <div>
-        我是Children
-      </div>
-    )
-  }
-}
 
 ReactDOM.render(
   // <Router history={browserHistory} >
