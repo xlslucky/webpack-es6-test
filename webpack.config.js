@@ -22,7 +22,9 @@ module.exports = {
     ]
   },
   externals: {
-    'jquery': 'jquery'
+    'react': 'window.React',
+    'react-dom': 'window.ReactDOM',
+    'react-router': 'window.ReactRouter',
   },
   plugins: [
       new webpack.optimize.UglifyJsPlugin({
