@@ -28,7 +28,7 @@ export class Home extends Component {
   render() {
     let { image } = this.state;
     return (
-      <div>
+      <div className="">
         <Header />
         <div className="background" style={{backgroundImage: 'url(' + image + ')'}}></div>
       </div>
