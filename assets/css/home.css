@@ -7,9 +7,13 @@
 html, 
 body, 
 .app, 
-.app > div 
+.con
 {
   height: 100%;
+}
+
+.con {
+  position: relative;
 }
 
 .background {
@@ -17,4 +21,12 @@ body,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.sent {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
 }
