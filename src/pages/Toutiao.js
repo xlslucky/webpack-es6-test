@@ -17,6 +17,7 @@ export class Toutiao extends Component {
       this.setState({address: ''})
       return false;
     }
+    alert('准备刷！')
     setInterval(()=>{
       fetch(address).then((e)=>{
         // console.log(e)
