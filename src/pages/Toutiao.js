@@ -38,18 +38,27 @@ export class Toutiao extends Component {
     }
     return (
       <div>
-        <p>刷头条访问量</p>
-        <input 
-          type="text" 
-          style={textStyle}
-          onChange={({target})=>{
-            address = target.value
-            this.setState({ address })
-          }}
-          value={address}/>
-        <button 
-          style={btnStyle}
-          onClick={this.request.bind(this)}>btn</button>
+        <div>
+          <h1>刷头条访问量</h1>
+          <p>输入的地址是：{address}</p>
+          <input 
+            type="text" 
+            style={textStyle}
+            onChange={({target})=>{
+              address = target.value
+              this.setState({ address })
+            }}
+            value={address}/>
+          <button 
+            style={btnStyle}
+            onClick={this.request.bind(this)}>btn</button>
+        </div>
+        <div>
+          <ul>
+            <li style={{listStyle: 'circle'}}>在手机端打开，如果是pc端，可以 F12 选择手机模式</li>
+            <li>默认的是1000ms刷一次，启动之后去查看访问量，如果没变，请换下一个</li>
+          </ul>
+        </div>
       </div>
     )
   }
