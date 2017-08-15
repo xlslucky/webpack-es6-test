@@ -14,7 +14,7 @@ ReactDOM.render(
     <Route path="/" component={Home} />
     <Route path="/children" component={Children} />
     <Route path="/toutiao" component={Toutiao} />
-  </Router>, 
+  </Router>,
   app
 );
 

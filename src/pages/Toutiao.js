@@ -28,8 +28,8 @@ export class Toutiao extends Component {
   render() {
     let { address } = this.state;
     let btnStyle = {
-      height: '30px', 
-      border: '1px solid red', 
+      height: '30px',
+      border: '1px solid red',
       padding: '0 20px'
     }
     let textStyle = {
@@ -43,14 +43,14 @@ export class Toutiao extends Component {
           <h1>刷头条访问量</h1>
           <p>输入的地址是：{address}</p>
           <input 
-            type="text" 
+            type="text"
             style={textStyle}
             onChange={({target})=>{
               address = target.value
               this.setState({ address })
             }}
             value={address}/>
-          <button 
+          <button
             style={btnStyle}
             onClick={this.request.bind(this)}>btn</button>
         </div>
