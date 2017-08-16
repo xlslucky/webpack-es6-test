@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
-html, 
-body, 
-.app, 
+html,
+body,
+.app,
 .con
 {
   height: 100%;
@@ -29,4 +30,23 @@ body,
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+
+.header {
+  height: 60px;
+  background: #f0f0f0;
+  padding-top: 10px;
+}
+
+.header .header-main {
+
+}
+
+.header .logo {
+  display: inline-block;
+  height: 40px;
+  width: 154px;
+  background: url('/assets/images/logo.png');
+  background-size: cover;
+  margin-left: 20px;
 }
