@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 
 import { Home } from './pages/Home';
 import { Children } from './pages/Children';
@@ -12,6 +12,7 @@ ReactDOM.render(
   // <Router history={browserHistory} >
   <Router>
     <Route path="/" component={Home} />
+    {/* <IndexRoute component={Home} /> */}
     <Route path="/children" component={Children} />
     <Route path="/toutiao" component={Toutiao} />
   </Router>,
