@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "supervisor server.js",
     "dev": "webpack -w --progress"
   },
   "keywords": [],
