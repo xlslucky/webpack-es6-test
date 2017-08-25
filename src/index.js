@@ -6,6 +6,8 @@ import { Home } from './pages/Home';
 import { Children } from './pages/Children';
 import { Toutiao } from './pages/Toutiao';
 
+import { Test } from './pages/Test';
+
 let app = document.getElementById('app');
 
 ReactDOM.render(
@@ -15,6 +17,7 @@ ReactDOM.render(
     {/* <IndexRoute component={Home} /> */}
     <Route path="/children" component={Children} />
     <Route path="/toutiao" component={Toutiao} />
+    <Route path="/test" component={Test} />
   </Router>,
   app
 );

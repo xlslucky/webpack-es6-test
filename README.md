@@ -30,3 +30,21 @@
     ]
   }
 ```
+
+## 遇到的问题
+
+1.react 遍历数组
+
+```js
+this.state = {
+  list: ['a', 'b']
+}
+...
+<ul>
+  {
+    list.map((item, index) => {
+      return <li key={index}>{item}</li>
+    })
+  }
+</ul>
+```
