@@ -39,7 +39,9 @@
 this.state = {
   list: ['a', 'b']
 }
-...
+
+// ....
+
 <ul>
   {
     list.map((item, index) => {
