@@ -13,6 +13,7 @@
 ### react-router
 * [小白学react之React Router实战](http://www.jianshu.com/p/d8d1e5d50447)
 * [阮一峰-React Router 使用教程](http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu)
+* [react-router文档](http://www.uprogrammer.cn/react-router-cn)
 
 ## 其他
 

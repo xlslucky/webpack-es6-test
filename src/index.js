@@ -10,16 +10,38 @@ import { Test } from './pages/Test';
 
 let app = document.getElementById('app');
 
-ReactDOM.render(
-  // <Router history={browserHistory} >
-  <Router>
-    <Route path="/" component={Home} />
-    {/* <IndexRoute component={Home} /> */}
-    <Route path="/children" component={Children} />
-    <Route path="/toutiao" component={Toutiao} />
-    <Route path="/test" component={Test} />
-  </Router>,
-  app
-);
+const routes = [
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/children',
+    component: Children
+  },
+  {
+    path: '/toutiao',
+    component: Toutiao
+  },
+  {
+    path: '/test',
+    component: Test
+  }
+]
+
+// ReactDOM.render(<Router history={browserHistory} routes={routes} />, app);
+ReactDOM.render(<Router routes={routes} />, app);
+
+// ReactDOM.render(
+//   // <Router history={browserHistory} >
+//   <Router>
+//     <Route path="/" component={Home} />
+//     {/* <IndexRoute component={Home} /> */}
+//     <Route path="/children" component={Children} />
+//     <Route path="/toutiao" component={Toutiao} />
+//     <Route path="/test" component={Test} />
+//   </Router>,
+//   app
+// );
 
 // ReactDOM.render(<Home />, app)
