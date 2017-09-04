@@ -3,6 +3,8 @@ import { Link } from 'react-router';
 
 import { Header } from '../components/Header';
 
+import { addNum } from '../utils';
+
 export class Home extends Component {
 
   constructor(props) {
@@ -12,8 +14,11 @@ export class Home extends Component {
     };
   }
 
+  componentDidMount () {
+    addNum()
+  }
+
   render() {
-    let { image, sent } = this.state;
     return (
       <div className="con">
         <Header />
