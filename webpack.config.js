@@ -19,7 +19,13 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ['babel-loader'],
+        /*use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["es2015", "react"]
+          }
+        }*/
       }
     ]
   },
@@ -36,6 +42,7 @@ module.exports = {
         warnings: false
       }
     }),
+    // 提取公共模块
     new webpack.optimize.CommonsChunkPlugin('common')
   ]
 }

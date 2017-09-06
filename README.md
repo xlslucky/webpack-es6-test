@@ -15,6 +15,10 @@
 * [阮一峰-React Router 使用教程](http://www.ruanyifeng.com/blog/2016/05/react_router.html?utm_source=tool.lu)
 * [react-router文档](http://www.uprogrammer.cn/react-router-cn)
 
+### webpack
+* [webpack指南](https://webpack.toobug.net/zh-cn/)
+* [webpack 从入门到工程实践](http://dwz.cn/6tw4XA)
+
 ## 其他
 
 1. babel
