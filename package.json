@@ -8,7 +8,7 @@
     "dev": "webpack -w --progress"
   },
   "keywords": [],
-  "author": "",
+  "author": "xlslucky",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.25.0",
