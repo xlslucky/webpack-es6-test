@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+import 'css/home.css';
+
 export class Header extends Component {
   render() {
     return (
